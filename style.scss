@@ -1,0 +1,33 @@
+@import "normalize";
+
+$black: #222;
+$link: red;
+
+$baseFont: 'Helvetica Neue', Arial, sans-serif;
+$headerFont: 'Georgia', serif;
+$fontSize: 16px;
+
+body {
+	font-family: $baseFont;
+	font-size: $fontSize;
+	color: $black;
+}
+
+a {
+	color: $link;
+	&:hover {
+		color: darken($link, 10);
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $headerFont;
+}
+
+h1 {
+	font-size: $fontSize *3;
+}
+
+h2 {
+	font-size: $fontSize * 2.5;
+}
