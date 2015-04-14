@@ -2,16 +2,112 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Final Project</title>
+	<title>Lewis Cruise</title>
 	<link rel="stylesheet" href="style.css">
+	<link type="image/png" href="images/luis-favicon.png" rel="icon">
+	<link href="http://fonts.googleapis.com/css?family=Alegreya:300|Montserrat:400,700" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-
-	<header>
-		<nav>
-			
-		</nav>
-	</header>
+<!-- NAV -->
+		<div class="nav">
+			<div class="wrapper">
+			<!-- ul>li*3>a -->
+			<ul>
+				<li><a href="index.html">home</a></li>
+				<li><a href="#team">team</a></li>
+				<li><a href="#team">shop</a></li>
+				<li><a href="#contact">contact</a></li>
+			</ul>
+			</div>
+		</div>
+<!-- HEADER -->
+		<header>
+			<div class="wrapper">
+				<h1>Lewis Cruise</h1>
+				<h3>Skateboards & Shit</h3>
+			</div>
+		</header>
+		<div class="about section clearfix">
+		<!-- Clearfix the parent of the stuff you dont want floated left anymore :) -->
+			<div class="wrapper">
+				<h2>About</h2>
+				<div class="contentHalf">
+					<h3>our story</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ad obcaecati. Laboriosam ipsum officia aperiam corrupti atque expedita similique, corporis, tenetur ratione! Vero at quas quia aut eos! Ipsum, ipsam.</p>
+					<p>Quisquam vero, vel, architecto provident nemo quis possimus illo rem sequi ab iste autem sit tempore dolor impedit deserunt error amet necessitatibus est unde officia et, excepturi officiis quas. Recusandae!</p>
+				</div>
+				<!-- .contentHalf>h3+p*2>lorem -->
+				<div class="contentHalf">
+					<h3>our process</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui libero amet fugiat obcaecati dolor maxime maiores autem accusantium provident, quos possimus, eos, reprehenderit doloremque inventore aperiam at sint dolore. Esse.</p>
+					<p>Perspiciatis nostrum consequuntur, omnis tenetur quaerat quidem blanditiis! Dicta autem neque, quidem aut, iste iusto similique consectetur beatae debitis dolorem modi voluptatum fugiat tempora voluptates reprehenderit itaque vitae ratione, harum?</p>
+				</div>
+			</div>
+		</div>
+		<div class="stickers">
+			<div class="background">
+				
+			</div>
+		</div>
+<!--TEAM  -->
+		<div id="team" class="team section clearfix">
+		<!-- Clearfix the parent of the floated gallery images -->
+			<div class="wrapper clearfix">
+				<h2>team</h2>
+					<div class="fifty">
+						<div class="card">
+						  	<h3>Justin Basset</h3>
+						    <div class="front basset"></div>
+						    <div class="back">
+						    	<p>Born: 1989</p>
+						    	<p>Stance: Regular</p>
+						    	<p>Home: Winnipeg ,MB</p>
+						    </div>
+						</div>    
+					</div>
+					<div class="fifty">
+						<div class="card">
+						  	<h3>Sam Beaulieu</h3>
+						    <div class="front beaulieu"></div>
+						    <div class="back"></div>
+						</div>
+					</div>
+					<div class="fifty">
+						<div class="card">
+							<h3>Corey Lof</h3>				  	
+						    <div class="front lof"></div>
+						    <div class="back"></div>
+						</div>
+					</div>
+					<div class="fifty">
+						<div class="card">
+						  	<h3>Nolan Waller</h3>
+						    <div class="front waller"></div>
+						    <div class="back"></div>
+						</div>
+					</div>	
+			</div>
+		</div>
+<!-- CONTACT -->
+		<div id="contact" class="contact section clearfix">
+			<div class="wrapper">
+				<h2>contact us</h2>
+				<form action="">
+					<div class="field">
+						<label for="name">Name</label>
+						<input type="text" name="name">
+					</div>
+					<div class="field">
+						<label for="email">email</label>
+						<input type="email" name="email">
+					</div>
+					<div class="field submit">
+						<input type="submit">
+					</div>
+				</form>
+			</div>
+		</div>
 	
 </body>
 </html>

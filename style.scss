@@ -1,11 +1,14 @@
 @import "normalize";
 
 $black: #222;
+$white: #ecf0f1;
+$grey: rgb(155, 155, 155);
 $link: red;
+$text: #fff;
 
-$baseFont: 'Helvetica Neue', Arial, sans-serif;
-$headerFont: 'Georgia', serif;
-$fontSize: 16px;
+$baseFont: 'Montserrat', sans-serif;
+$headerFont: 'Montserrat', sans-serif;
+$fontSize: 18px;
 
 body {
 	font-family: $baseFont;
@@ -20,14 +23,313 @@ a {
 	}
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: $headerFont;
-}
+	h1, h2, h3, h4, h5, h6 {
+		color: $black;
+		font-family: $headerFont;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+	}
 
-h1 {
-	font-size: $fontSize *3;
-}
+	h1 {
+		font-size: $fontSize *4;
+		// font-size: 56px;
+		color: #fff;
+		text-shadow: 2px 2px 5px $black;
+		margin-bottom: 0;
+	}
 
-h2 {
-	font-size: $fontSize * 2.5;
+	h2 {
+		font-size: $fontSize * 2.5;
+	}
+
+	h3 {
+		font-size: $fontSize * 1.5;
+		// font-size: 36px;
+	}
+
+body {
+	font-size: 16px;
+	font-family: "Alegreya", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+	background: $white;
 }
+	.wrapper {
+		max-width: 1280px;
+		margin: 0 auto;
+	}
+
+	.section {
+		padding: 80px 0;
+		text-align: center;
+	}
+
+	.contentHalf {
+		width: 45%;
+		float: left;
+		margin: 0 2.5%;
+	}
+
+	.nav {
+		position: fixed;
+		background: rgba(0,0,0, 0.625);
+		width: 100%;
+		top: 0;
+		padding: 0;
+		z-index: 99;
+
+		ul {
+			text-align: center;
+			padding: 0;
+			
+			li {
+				display: inline-block;
+				margin: 0 40px;
+				font-family: 'Montserrat';
+				text-transform: uppercase;
+
+				a {
+					color: #fff;
+					text-decoration: none;
+				}
+      		}
+		}
+	} 
+
+	header {
+		text-align: center;
+		background: url(images/pavement-3.JPG) fixed;
+		/*"fixed" makes header image stay*/
+		background-repeat: no-repeat;
+		background-size: cover;
+		max-width: 100%;
+		// min-height: 460px;
+		padding: 10% 0 15% 0;
+		margin-top: 0;
+		
+		p {
+			color: #fff;
+		}
+	}
+
+	.about {
+		background: #fff;
+		position: relative;
+
+		h2 {
+			font-size: $fontSize * 2.5;
+			margin-top: 10%;
+		}
+	}
+
+		.about::before {
+			content: url(images/og-logo-300.png);
+			position: absolute;
+			top: -150px;
+			text-align: center;
+			left: calc(50% - 150px);
+		}
+
+	.stickers {
+		.background {
+			height: 400px;
+			background: url(images/sticker-scan-900.jpg) fixed;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	}
+	.team {
+		background: $white;
+	}
+		.fifty {
+			width: 50%;
+			float: left;
+			height: 520px;
+		}
+		    .card {
+				height: 400px;
+				width: 400px;
+				margin: 0 auto;
+				max-width: 100%;
+				border-radius: 50%;
+			    position: relative;
+			    cursor: pointer; cursor: hand;
+			    perspective: 700px; 
+			    /* important for how "in yo face" the flip is. The lower the value, the more in yo face" */
+	
+			    .front, .back {
+				    position: absolute;
+				    height:100%;
+				    width:100%;
+				    border-radius: 50%;
+				    transition:all 0.5s;
+				    backface-visibility: hidden;
+				    /* This means that when it is flipped over, we don't see the back */
+			    }
+	 
+			    .back {
+			      background: $black;
+			      -webkit-transform:rotateY(180deg); /* By Default set the back to be rotate */
+			    
+					p {
+						text-align: center;
+						color: #fff;
+					} 
+
+					p:first-child {
+						margin-top: 50px;
+					}
+			    }
+			}
+
+		    .card:hover .back {
+		      -webkit-transform:rotateY(0);
+		    }
+
+		    .card:hover .front {
+		      -webkit-transform:rotateY(-180deg);
+		    }
+
+			    .basset {
+			    	background-image: url(images/justin-basset.jpg);
+			    	background-repeat: no-repeat;
+			    }
+
+			    .beaulieu {
+			    	background-image: url(images/sam-beaulieu.jpg);
+			    	background-repeat: no-repeat;
+			    }
+
+			    .lof {
+			    	background-image: url(images/corey-lof.jpg);
+			    	background-repeat: no-repeat;
+			    }
+
+			    .waller {
+			    	background-image: url(images/nolan-waller.jpg);
+			    	background-repeat: no-repeat;
+			    }
+
+	.contact {
+		background: #111;
+		background: url(images/pavement-1.JPG) fixed;
+
+		h2 {
+			color: #fff;
+			text-shadow: 1px 1px 3px $black;
+		}
+	}
+
+	.field {
+		float: left;
+		width: 33.33%;
+	}
+
+	.field label {
+		background: $white;
+		color: #111;
+		padding: 8px;
+		text-transform: uppercase;
+		font-family: 'Montserrat';
+	}
+
+	.field input {
+		background: $white;
+		color: $black;
+		padding: 8px;
+		margin-left: -4px;
+		font-size: 13px;
+		font-family: "Montserrat";
+		text-transform: uppercase;
+	}
+
+	@media (max-width: 1024px) {
+		
+		.about {
+			h2 {
+			margin-top: 5%;
+			}
+	}	
+
+		.about::before {
+			content: url(images/og-logo.png);
+			position: absolute;
+			top: -100px;
+			text-align: center;
+			left: calc(50% - 100px);
+		}
+			
+		.field {
+			width: 33.33%;
+			margin-bottom: 25px;
+		}
+		.field.submit {
+			display: block;
+		}
+	}
+
+	@media (max-width: 767px) {
+		.header {
+			h1 {
+				margin-bottom: 0;
+			}
+		}
+
+		.about {
+			h2 {
+				margin-top: 7%;
+				margin-bottom: 0;
+			}
+		}
+
+		.contentHalf {
+			width: 95%;
+		}
+		.fifty {
+			width: 100%;
+		}
+		.field {
+			width: 100%;
+			margin-bottom: 25px;
+		}
+	}
+
+	@media (max-width: 480px) {
+		header {
+			height: 420px;
+		}
+		h1 {
+			margin-top: 90px;
+			font-size: $fontSize * 3;
+		}
+
+		.about {
+			h2 {
+			margin-top: 10%;
+			font-size: $fontSize * 1.75;
+			}
+		}
+
+		h3 {
+			font-size: $fontSize;
+		}
+	}
+
+		.stickers {
+			.background {
+				height: 200px;
+			}
+		}
+
+	@media (max-width: 400px) {
+		.team {
+			background: $white;
+		}
+	    .card {
+			border-radius: 0;
+		   	
+		    .front, .back {
+			    border-radius: 0;
+			    /* This means that when it is flipped over, we don't see the back */
+		    }
+		}
+	}
